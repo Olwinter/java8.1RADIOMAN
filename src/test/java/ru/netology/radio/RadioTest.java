@@ -19,7 +19,7 @@ public class RadioTest {
     void ShouldMinStation() {
         Radio rad = new Radio();
         //проверяем, что при выборе станции меньше минимальной, значение не меняется
-        rad.setCurrentStation(23);
+        rad.setCurrentStation(-3);
         int expected = 0;
         int actual = rad.getCurrentStation();
         assertEquals(expected, actual);
@@ -66,6 +66,9 @@ public class RadioTest {
         int expected = 0;
         int actual = rad.getCurrentStation();
         assertEquals(expected, actual);
+
+
+
     }
 
     @Test
@@ -92,7 +95,7 @@ public class RadioTest {
     void ShouldMinVolume() {
         Radio rad = new Radio();
         //проверяем, что при выборе громкости меньше минимальной, значение не меняется
-        rad.setCurrentVolume(23);
+        rad.setCurrentVolume(-3);
         int expected = 0;
         int actual = rad.getCurrentVolume();
         assertEquals(expected, actual);
